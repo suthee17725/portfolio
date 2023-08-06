@@ -43,6 +43,18 @@ img {
   width: 100%;
   display: block;
 }
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.heading-p {
+  padding-top: 9rem;
+  text-align: center;
+}
+.icon1 {
+  width: 32px;
+  height: max-content;
+}
 .btn {
   display: inline-block;
   width: fit-content;
@@ -73,6 +85,7 @@ nav {
   left: 0;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 .nav-container {
   display: flex;
@@ -156,7 +169,7 @@ header {
   border-radius: 50%;
   border: 1px solid var(--color-primary);
   position: relative;
-  animation: CircleAni linear infinite 20;
+  animation: CircleAni linear infinite 20s;
 }
 @keyframes CircleAni {
   to {
@@ -207,3 +220,43 @@ header {
   background: var(--color-primary);
 }
 /*....................End Header section....................*/
+/*....................Start skills section....................*/
+section {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  right: 3%;
+  transition: var(--transtion);
+  margin-top: 1.4rem;
+}
+.arrow:hover {
+  margin-top: 2rem;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+.skills-box {
+  border: 1px solid var(--color-black);
+  border-radius: 30px;
+  padding: 24px;
+}
+.skills-box h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.sk-div {
+  margin-left: 60px;
+  display: flex;
+  gap: 20px;
+  /* justify-content: center; */
+}
+
+/*....................End skills section....................*/
